@@ -21,6 +21,6 @@ for i in range(TEST_CASE):
 # pi/4 = number_of_points_in_circle / number_of_all_points
 
 estimated_pi =  4 * successor / TEST_CASE
-print(estimated_pi)
+print("Estimation:",estimated_pi)
 
 print(f"Error is { round( abs(math.pi - estimated_pi) / math.pi * 100,6 ) } %")
