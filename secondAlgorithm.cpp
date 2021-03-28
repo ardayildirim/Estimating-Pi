@@ -7,6 +7,9 @@
 
 using std::cout;
 
+//This algorithm uses an infinite series.
+// pi is equal to (4/1) - (4/3) + (4/5) - (4/7) ... 
+// see https://en.wikipedia.org/wiki/Leibniz_formula_for_π for proof.
 
 const long TEST_CASE = 1e7;
 

@@ -20,17 +20,18 @@ int main()
 {
     srand(time(0));
 
-    long successor = 0;
+    
+    long inside = 0; //number of points inside the unit circle.
     for(long i = 0; i < TEST_CASE; i++)
     {
         double px = random_number();
         double py = random_number();
 
-        if(px*px + py*py <= 1)
-            successor++;
+        if(px*px + py*py <= 1) // unit circle is x^2 + y^2 <= 1
+            inside++;
     }
 
-    double estimation = 4.0 * successor / TEST_CASE;
+    double estimation = 4.0 * inside / TEST_CASE;
     cout << "Estimation: " << estimation << "\n";
 
     cout << std::fixed;
